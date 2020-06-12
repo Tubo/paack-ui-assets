@@ -1,8 +1,8 @@
 {
   "name": "paack-ui-assets",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
-  "files": ["js/**/*"],
+  "files": ["js"],
   "scripts": {
     "optimize:svgs" : "npx svgo --config=./svgo.json --folder=./src/svg --output=./dist/optimizedSvg --multipass",
     "merge:svgs" : "npx svg-sprite --symbol --symbol-inline --symbol-dest=dist/ --symbol-sprite=icon-sprite.svg dist/optimizedSvg/*.svg",
