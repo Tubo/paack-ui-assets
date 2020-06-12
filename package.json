@@ -1,6 +1,6 @@
 {
   "name": "paack-ui-assets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "files": ["/js/**/*"],
   "scripts": {
@@ -8,6 +8,7 @@
     "merge:svgs" : "npx svg-sprite --symbol --symbol-inline --symbol-dest=dist/ --symbol-sprite=icon-sprite.svg dist/optimizedSvg/*.svg",
     "build:svgSprite": "npm run optimize:svgs && npm run merge:svgs",
     "build:iconCustomElement": "npm run build:svgSprite && npx parcel build src/js/paackSvgIconSprite.js --out-dir ./js",
+    "build": "npm run build:iconCustomElement",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "PackEng",
