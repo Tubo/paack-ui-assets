@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="25px" viewBox="0 0 30 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>Elements/Icons/Messages1</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-540.000000, -413.000000)" id="Elements/Icons/Messages1">
+            <g transform="translate(520.000000, 390.000000)">
+                <g>
+                    <polygon id="Rectangle" points="0 0 70 0 70 70 0 70"></polygon>
+                    <path d="M35,23 C43.2842712,23 50,28.372583 50,35 C50,37.1520203 49.2918956,39.1717312 48.0519154,40.9181501 L48,41 C46.6666667,43 47,45.3333333 49,48 C46.2421915,48 44.1688787,47.0873391 42.7800616,45.2620172 C40.5116501,46.364782 37.848552,47 35,47 C26.7157288,47 20,41.627417 20,35 C20,28.372583 26.7157288,23 35,23 Z" id="Combined-Shape" fill="#4A4A4A" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

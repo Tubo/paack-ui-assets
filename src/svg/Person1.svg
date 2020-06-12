@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="33px" viewBox="0 0 28 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>Elements/Icons/Person1</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-431.000000, -190.000000)" id="Elements/Icons/Person1">
+            <g transform="translate(410.000000, 170.000000)">
+                <g>
+                    <polygon id="Rectangle" points="0 0 70 0 70 70 0 70"></polygon>
+                    <path d="M35,33.106383 C31.3756313,33.106383 28.4375,30.1724192 28.4375,26.5531915 C28.4375,22.9339638 31.3756313,20 35,20 C38.6243687,20 41.5625,22.9339638 41.5625,26.5531915 C41.5625,30.1724192 38.6243687,33.106383 35,33.106383 Z M49,47 C49,54 21,54 21,47 C21,41.2806386 26.6532288,34.9787234 35,34.9787234 C43.3467712,34.9787234 49,41.2553031 49,47 Z" id="Shape" fill="#4A4A4A" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

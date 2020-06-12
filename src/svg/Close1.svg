@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>Elements/Icons/Close1</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-654.000000, -194.000000)" id="Elements/Icons/Close1">
+            <g transform="translate(630.000000, 170.000000)">
+                <g id="Elements/Icons/Close-1">
+                    <g id="Elements/Icons/Add1">
+                        <polygon id="Rectangle" points="0 0 70 0 70 70 0 70"></polygon>
+                    </g>
+                    <path d="M37.5709733,35 L45.467534,42.8965607 C46.1774887,43.6065154 46.1774887,44.7575793 45.467534,45.467534 C44.7575793,46.1774887 43.6065154,46.1774887 42.8965607,45.467534 L35,37.5709733 L27.1034393,45.467534 C26.3934846,46.1774887 25.2424207,46.1774887 24.532466,45.467534 C23.8225113,44.7575793 23.8225113,43.6065154 24.532466,42.8965607 L32.4290267,35 L24.532466,27.1034393 C23.8225113,26.3934846 23.8225113,25.2424207 24.532466,24.532466 C25.2424207,23.8225113 26.3934846,23.8225113 27.1034393,24.532466 L35,32.4290267 L42.8965607,24.532466 C43.6065154,23.8225113 44.7575793,23.8225113 45.467534,24.532466 C46.1774887,25.2424207 46.1774887,26.3934846 45.467534,27.1034393 L37.5709733,35 Z" id="Path" fill="#4A4A4A" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
