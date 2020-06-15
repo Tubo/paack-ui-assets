@@ -2,9 +2,7 @@ publish:
 	npm publish
 
 
-build-svg-icon-sprite:
-	optimize-svg
-	create-svg-sprite
+build-svg-icon-sprite: optimize-svgs create-svg-sprite
 
 optimize-svgs:
 	npx svgo --config=./svgo.json --folder=./src/svg --output=./dist/optimizedSvg --multipass
