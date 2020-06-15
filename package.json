@@ -4,7 +4,7 @@
   "description": "",
   "files": ["js"],
   "scripts": {
-    "prepublish": "make build-svg-icon-sprite"
+    "prepublish": "make build"
   },
   "author": "PackEng",
   "license": "ISC",

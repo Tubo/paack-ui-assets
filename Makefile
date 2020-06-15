@@ -1,6 +1,9 @@
 publish:
 	npm publish
 
+build: build-svg-icon-sprite
+	npx parcel build src/js/paackSvgIconSprite.js --out-dir ./js
+
 
 build-svg-icon-sprite: optimize-svgs create-svg-sprite
 
