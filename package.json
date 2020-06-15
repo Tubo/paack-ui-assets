@@ -4,12 +4,7 @@
   "description": "",
   "files": ["js"],
   "scripts": {
-    "optimize:svgs" : "npx svgo --config=./svgo.json --folder=./src/svg --output=./dist/optimizedSvg --multipass",
-    "merge:svgs" : "npx svg-sprite --symbol --symbol-inline --symbol-dest=dist/ --symbol-sprite=icon-sprite.svg dist/optimizedSvg/*.svg",
-    "build:svgSprite": "npm run optimize:svgs && npm run merge:svgs",
-    "build:iconCustomElement": "npm run build:svgSprite && npx parcel build src/js/paackSvgIconSprite.js --out-dir ./js",
-    "prepublish": "npm run build:iconCustomElement",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "make build-svg-icon-sprite"
   },
   "author": "PackEng",
   "license": "ISC",
