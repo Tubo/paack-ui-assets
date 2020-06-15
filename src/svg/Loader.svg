@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
     <title>Elements/Icons/Loader</title>
     <desc>Created with sketchtool.</desc>
     <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-433.000000, -633.000000)" id="Elements/Icons/Loader">
-            <g transform="translate(410.000000, 610.000000)">
-                <g>
+        <g transform="translate(-631.000000, -610.000000)" id="Elements/Icons/Edit">
+            <g transform="translate(631.000000, 610.000000)">
+                <g id="Elements/Icons/Loader">
                     <rect id="Rectangle" x="0" y="0" width="70" height="70"></rect>
-                    <path d="M35,23 C35.7927586,23 36.4354118,23.6426535 36.4354118,24.4354067 C36.4354118,25.2281599 35.7927586,25.8708134 35,25.8708134 C29.9580812,25.8708134 25.870812,29.9580937 25.870812,35 C25.870812,40.0419063 29.9580812,44.1291866 35,44.1291866 C40.0418912,44.1291866 44.129188,40.0418879 44.129188,35 C44.129188,34.2072468 44.7718411,33.5645933 45.564594,33.5645933 C46.3573468,33.5645933 47,34.2072468 47,35 C47,41.6273944 41.6273969,47 35,47 C28.372574,47 23,41.6274113 23,35 C23,28.3725887 28.372574,23 35,23 Z" id="Path" fill="#4A4A4A" fill-rule="nonzero"></path>
                 </g>
             </g>
         </g>
