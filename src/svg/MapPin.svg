@@ -1,18 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="22px" height="32px" viewBox="0 0 22 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
-    <title>Elements/Icons/MapPin</title>
-    <desc>Created with sketchtool.</desc>
-    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-324.000000, -188.000000)" id="Elements/Icons/MapPin">
-            <g transform="translate(300.000000, 170.000000)">
-                <g id="Elements/Icons/Placeholder">
-                    <g id="Group">
-                        <polygon id="Rectangle" points="0 0 70 0 70 70 0 70"></polygon>
-                        <path d="M24.44,27.6168639 C24.7565748,22.9877329 28.7080341,17.9933717 35,17.9999476 C41.2919659,18.0066283 45.2365748,23.0384141 45.56,27.7667877 C46.010915,34.3590213 43.9318974,40.5055133 35.4960458,49.4769669 C35.2411629,49.7480758 34.8147614,49.7611956 34.5436729,49.5062912 C34.5319075,49.4952282 34.5205436,49.4837458 34.5096034,49.4718662 C26.0696003,40.3071692 23.994279,34.1344416 24.44,27.6168639 Z" id="Rectangle" fill="#4A4A4A" fill-rule="nonzero"></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.1014 24.9946C17.668 16.8142 24.7393 7.98839 35.999 8.00001C47.2587 8.01182 54.3178 16.9038 54.8965 25.2596C55.7035 36.9091 51.983 47.7709 36.8867 63.6249C36.4306 64.104 35.6675 64.1272 35.1824 63.6768C35.1613 63.6572 35.141 63.6369 35.1214 63.6159C20.0177 47.4204 16.3038 36.5122 17.1014 24.9946Z" fill="#4A4A4A"/>
 </svg>
