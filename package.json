@@ -6,7 +6,7 @@
     "js"
   ],
   "scripts": {
-    "prepublish": "make build",
+    "prepublish": "npm run build",
     "build": "npm run build-spritesheet && npm run build-parcel",
     "build-parcel": "parcel build src/js/*.js --out-dir ./js",
     "build-spritesheet": "npm run optimize-svgs && npm run create-svg-sprite",
