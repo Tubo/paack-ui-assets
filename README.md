@@ -9,7 +9,7 @@ Check it out assets [section](https://github.com/PaackEng/paack-ui#assets) in pa
 
 ### Publishing
 
-You must bump the `package.json` version and then run `make publish`, the package will be published in npm.
+You must bump the `package.json` version and then run `npm publish`, the package will be published in npm.
 
 
 
