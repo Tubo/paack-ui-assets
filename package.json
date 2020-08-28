@@ -1,0 +1,19 @@
+{
+  "name": "paack-ui-assets",
+  "version": "0.0.11",
+  "description": "",
+  "files": ["js"],
+  "scripts": {
+    "prepublish": "make build",
+    "build": "parcel build src/js/paackSvgIconSprite.js --out-dir ./js",
+    "optimize-svgs": "svgo --config=./svgo.json --folder=./src/svg --output=./dist/optimizedSvg --multipass",
+    "create-svg-sprite": "svg-sprite --symbol --symbol-inline --symbol-dest=dist/ --symbol-sprite=icon-sprite.svg dist/optimizedSvg/*.svg"
+  },
+  "author": "PackEng",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "svg-sprite": "^1.5.0",
+    "svgo": "^1.3.2"
+  }
+}
