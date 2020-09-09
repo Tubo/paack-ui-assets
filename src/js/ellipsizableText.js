@@ -7,11 +7,11 @@ const template = Object.assign(document.createElement('template'), {
           overflow: hidden;
           display: block;
         }
-  
+
         .text--overflown {
           cursor: pointer;
         }
-  
+
         .tooltip {
           outline: 0;
           position: absolute;
@@ -28,7 +28,7 @@ const template = Object.assign(document.createElement('template'), {
           clip: rect(0, 0, 0, 0);
           word-break: break-all;
         }
-  
+
         .tooltip::before {
           content: '';
           height: 0;
@@ -39,7 +39,7 @@ const template = Object.assign(document.createElement('template'), {
           top: -16px;
           right: 16px;
         }
-  
+
         .tooltip::after {
           content: '';
           height: 8px;
@@ -49,7 +49,7 @@ const template = Object.assign(document.createElement('template'), {
           right: 0;
           background: transparent;
         }
-  
+
         .tooltip:focus,
         .text--overflown:focus + .tooltip,
         .text--overflown:hover + .tooltip {
@@ -65,6 +65,8 @@ const template = Object.assign(document.createElement('template'), {
 
 const runDelayed = window.requestIdleCallback || window.requestAnimationFrame;
 
+const TEXT_ATTRIBUTE = 'text';
+
 class EllipsizableText extends HTMLElement {
   constructor() {
     super();
@@ -72,25 +74,49 @@ class EllipsizableText extends HTMLElement {
     this.shadowRoot.appendChild(template.content.cloneNode(true));
   }
 
+  static get observedAttributes() { return [TEXT_ATTRIBUTE]; }
+
   connectedCallback() {
-    const { textContent } = this;
-    const text = this.shadowRoot.querySelector('.text');
+    const textContent = this.getAttribute(TEXT_ATTRIBUTE);
+    this.textNode = this.shadowRoot.querySelector('.text');
 
-    text.textContent = textContent;
+    this.textNode.textContent = textContent;
 
-    runDelayed(() => {
-      if (text.offsetWidth < text.scrollWidth) {
-        text.setAttribute('tabIndex', 0);
-        text.classList.add('text--overflown');
+    runDelayed(this.updateTooltip.bind(this));
+  }
 
-        const tooltip = text.cloneNode(true);
+  updateTooltip () {
+    const isOverflowing = this.textNode.offsetWidth < this.textNode.scrollWidth;
+    const existingTooltip = this.getExistingTooltip();
 
-        tooltip.setAttribute('tabIndex', 0);
+    if (existingTooltip && !isOverflowing) {
+      this.shadowRoot.removeChild(existingTooltip);
+      this.textNode.removeAttribute('tabIndex');
+      this.textNode.classList.remove('text--overflown');
+    }
 
-        tooltip.className = 'tooltip';
-        this.shadowRoot.appendChild(tooltip);
-      }
-    });
+    if (!existingTooltip && isOverflowing) {
+      this.textNode.setAttribute('tabIndex', 0);
+      this.textNode.classList.add('text--overflown');
+
+      const tooltip = this.textNode.cloneNode(true);
+
+      tooltip.setAttribute('tabIndex', 0);
+
+      tooltip.className = 'tooltip';
+      this.shadowRoot.appendChild(tooltip);
+    }
+  }
+
+  getExistingTooltip () {
+    return this.shadowRoot.querySelector('.tooltip');
+  }
+
+  attributeChangedCallback(attrName, oldVal, newVal) {
+    if (attrName === TEXT_ATTRIBUTE && oldVal !== null) {
+      this.textNode.textContent = newVal;
+      this.updateTooltip();
+    }
   }
 }
 
