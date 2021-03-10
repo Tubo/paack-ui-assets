@@ -10,7 +10,7 @@
     "build": "npm run build-spritesheet && npm run build-parcel",
     "build-parcel": "parcel build src/js/*.js --out-dir ./js",
     "build-spritesheet": "npm run optimize-svgs && npm run create-svg-sprite",
-    "optimize-svgs": "rm -f dist/optimizedSvg/* && svgo --config=./svgo.json --folder=./src/svg --output=./dist/optimizedSvg --multipass",
+    "optimize-svgs": "rm -f dist/optimizedSvg/* && svgo -f ./src/svg -o ./dist/optimizedSvg",
     "create-svg-sprite": "svg-sprite --symbol --symbol-inline --symbol-dest=dist/ --symbol-sprite=icon-sprite.svg dist/optimizedSvg/*.svg --symbol-example=true",
     "lint": "eslint src/js",
     "preview": "npm run build-spritesheet && parcel serve dist/sprite.symbol.html"
@@ -23,6 +23,6 @@
     "eslint": "^7.14.0",
     "parcel-bundler": "^1.12.4",
     "svg-sprite": "^1.5.0",
-    "svgo": "^1.3.2"
+    "svgo": "^2.2.2"
   }
 }
