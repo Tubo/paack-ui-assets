@@ -6,19 +6,20 @@
     "js"
   ],
   "scripts": {
-    "prepublish": "npm run build",
-    "build": "npm run build-spritesheet && npm run build-parcel",
-    "build-parcel": "parcel build src/js/*.js --out-dir ./js",
-    "build-spritesheet": "npm run optimize-svgs && npm run create-svg-sprite",
+    "prepublish": "yarn run build",
+    "build": "yarn run build:spritesheet && yarn run build:parcel",
+    "build:parcel": "parcel build src/js/*.js --out-dir ./js",
+    "build:spritesheet": "yarn run optimize-svgs && yarn run create-svg-sprite",
     "optimize-svgs": "rm -f dist/optimizedSvg/* && svgo -f ./src/svg -o ./dist/optimizedSvg",
     "create-svg-sprite": "svg-sprite --symbol --symbol-inline --symbol-dest=dist/ --symbol-sprite=icon-sprite.svg dist/optimizedSvg/*.svg --symbol-example=true",
     "lint": "eslint src/js",
-    "preview": "npm run build-spritesheet && parcel serve dist/sprite.symbol.html"
+    "preview": "yarn run build:spritesheet && parcel serve dist/sprite.symbol.html"
   },
   "author": "PackEng",
   "license": "MIT",
   "devDependencies": {
-    "@percy/cypress": "^2.3.4",
+    "@percy/cli": "^1.0.0-beta.47",
+    "@percy/cypress": "^3.0.0",
     "cypress": "^6.5.0",
     "eslint": "^7.14.0",
     "parcel-bundler": "^1.12.4",
