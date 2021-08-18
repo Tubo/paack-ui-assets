@@ -1,6 +1,6 @@
 {
   "name": "paack-ui-assets",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "",
   "files": [
     "js"
@@ -20,7 +20,7 @@
   "devDependencies": {
     "@percy/cli": "^1.0.0-beta.47",
     "@percy/cypress": "^3.0.0",
-    "cypress": "^7.1.0",
+    "cypress": "^8.3.0",
     "eslint": "^7.14.0",
     "parcel-bundler": "^1.12.4",
     "svg-sprite": "^1.5.0",
