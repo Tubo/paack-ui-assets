@@ -24,7 +24,6 @@ const template = Object.assign(document.createElement('template'), {
           box-sizing: content-box;
           left: -12px;
           opacity: 0;
-          width: 0;
           clip: rect(0, 0, 0, 0);
           word-break: break-all;
         }
